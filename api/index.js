@@ -1,8 +1,8 @@
-const router = require('express').Router();
 const userRoutes = require('./postRoutes');
 const postRoutes = require('./userRoutes');
+const axios = require('axios');
 
-router.use('/users', userRoutes);
-router.use('/post', postRoutes);
+axios.use('/users', userRoutes);
+axios.use('/post', postRoutes);
 
-module.exports = router;
+module.exports = axios;

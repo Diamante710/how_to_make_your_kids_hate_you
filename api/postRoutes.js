@@ -1,8 +1,8 @@
-const router = require('express').Router();
 const { Post } = require('../models');
 const withAuth = require('../utils/auth');
+const axios = require('axios');
 
-router.post('/', withAuth, async (req, res) => {
+axios.post ('/', withAuth, async (req, res) => {
   try {
     const newPost = await Post.create({
       ...req.body,
@@ -15,7 +15,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-router.delete('/:id', withAuth, async (req, res) => {
+axios.delete('/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.destroy({
       where: {
@@ -35,4 +35,4 @@ router.delete('/:id', withAuth, async (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = axios;

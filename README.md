@@ -5,7 +5,7 @@
 * [Task](#Task)
 * [User Story](#User-Story)
 * [Usage](#Usage)
-* [Demo & Site Link](#Demo)
+* [Screenshot & Site Link](#Screenshot)
 * [Contact Information](#Contact-Information)
 
 ## <a name="Task"></a>Task
@@ -24,7 +24,7 @@ SO THAT I am most nurturing and as least traumatizing, to my children
 
 This forum is designed for a user or new parent to be able to post their own tips and tricks on parenting, as well as, look up other tips and tricks based on the date posted, subject material, or title of an already made post. Registered users are also able to comment on other users post. 
 
-## <a name="Demo & Site Link"></a>Demo
+## <a name="Screenshot & Site Link"></a>Screenshot
 
 
 
