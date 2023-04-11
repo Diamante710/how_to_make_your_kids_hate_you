@@ -22,6 +22,7 @@ router.get('/', async (req, res) => {
       post, 
       logged_in: req.session.logged_in 
     });
+    console.log("end");
   } catch (err) {
     res.status(500).json(err);
   }
