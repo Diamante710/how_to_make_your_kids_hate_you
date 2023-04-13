@@ -11,7 +11,7 @@ Comments.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    text: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -36,7 +36,7 @@ Comments.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'post',
+    modelName: 'comments',
   }
 );
 
