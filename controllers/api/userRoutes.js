@@ -42,6 +42,13 @@ router.post('/login', async (req, res) => {
       
       res.json({ user: userData, message: 'You are now logged in!' });
     });
+    // const post = postData.map((post) => post.get({ plain: true }));
+
+    // // Pass serialized data and session flag into template
+    // res.render('homepage', { 
+    //   post, 
+    //   logged_in: req.session.logged_in 
+    // });
 
   } catch (err) {
     res.status(400).json(err);
