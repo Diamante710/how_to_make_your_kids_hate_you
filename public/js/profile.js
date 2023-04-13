@@ -2,6 +2,7 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const title = document.querySelector('#post-name').value.trim();
+  // const needed_funding = document.querySelector('#post-funding').value.trim();
   const description = document.querySelector('#post-desc').value.trim();
 
   if (title && description) {
@@ -12,7 +13,7 @@ const newFormHandler = async (event) => {
         'Content-Type': 'application/json',
       },
     });
-
+    
     if (response.ok) {
       document.location.replace('/profile');
     } else {
@@ -41,6 +42,6 @@ document
   .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);
 
-// document
-//   .querySelector('.post-list')
-//   .addEventListener('click', delButtonHandler);
+document
+  .querySelector('.post-list')
+  .addEventListener('click', delButtonHandler);
